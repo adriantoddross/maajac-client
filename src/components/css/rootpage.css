@@ -183,6 +183,9 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (min-width: 1024px) {
-
+@media only screen and (min-width: 1440px) {
+  .feature-container {
+    flex-direction: row;
+    padding: 75px 100px;
+  }
 }
