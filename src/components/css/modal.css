@@ -14,19 +14,19 @@ COLOR SCHEME
 LOGIN / REGISTER
 ============================ */
 
-/* .modal {
-  width: 80%;
-  max-width: 300px;
-} */
-
-.form-error {
-  color: #a0472f;
-  margin-bottom: 15px;
+.modal-form, .login-form {
+  margin: 25px;
 }
 
-.login {}
+.modal-form h3 {
+  text-align: center;
+}
 
-.login-form {}
+.form-error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
 .form-input {
   margin: 15px 0;
@@ -36,8 +36,8 @@ LOGIN / REGISTER
   border: 1px solid gray;
 }
 
-.register, .login label {
-  color: #2e3434;
+.modal-form label, .register, .login label {
+  color: #2D3333;
 }
 
 #username,
@@ -68,7 +68,7 @@ LOGIN / REGISTER
 }
 
 .form-button:disabled {
-  display: none;
+  /* display: none; */
   background-color: #2d332e;
   height: 30px;
   width: 160px;
@@ -82,7 +82,8 @@ LOGIN / REGISTER
 }
 
 .login-shortcut {
-  color: gray;
+  display: none;
+  color: #2D3333;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -96,10 +97,10 @@ p.login-shortcut:hover{
 MEDIA QUERIES
 ============================*/
 
-/* tablet */
+@media only screen and (min-width: 768px) {
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {}
+  .modal-form, .login-form {
+    margin: 0px;
+  }
 
-/* desktop */
-
-@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
+}
