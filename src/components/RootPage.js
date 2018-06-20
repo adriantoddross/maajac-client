@@ -30,24 +30,6 @@ class RootPage extends Component {
 			}
 		}
 
-		const linkStyle = {
-			color: 'white',
-			display: 'block',
-			fontWeight: 'bold',
-			fontSize: 16,
-			textTransform: 'uppercase',
-			textDecoration: 'none',
-		};
-
-		const getStartedStyle = {
-			color: 'white',
-			display: 'block',
-			fontWeight: 'bold',
-			fontSize: 24,
-			textTransform: 'uppercase',
-			textDecoration: 'none',
-		};
-
 		let modalForm;
 		if (this.props.currentTab) {
 			if (this.props.currentTab === 'signup') {
@@ -61,7 +43,7 @@ class RootPage extends Component {
 			<div className="rootpage">
 				<Dialog
 					bodyClassName="modal"
-					title="safeR"
+					// title="safeR"
 					modal={false}
 					autoScrollBodyContent={true}
 					contentStyle={{ width: 300 }}
