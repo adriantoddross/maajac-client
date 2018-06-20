@@ -129,33 +129,24 @@ MEDIA QUERIES
 @media only screen and (min-width: 768px) {
   /* For tablet/desktop: */
 
-  .rootpage {
-    flex-direction: column;
-
-  }
-
   .header {
     font-size: 50px;
   }
 
   .feature-container {
-    flex-direction: row;
-    padding: 0px 25px;
+    padding: 0px 100px;
     justify-content: space-around;
-    text-align: center
-
+    text-align: center;
   }
 
   .feature {
     border: none;
     margin: 50px;
     justify-content: center;
-
-
   }
 
   .feature p {
-    text-align: left
+    text-align: center;
   }
 
   .footer h3 {
@@ -169,5 +160,29 @@ MEDIA QUERIES
   .github-link {
     flex: 0;
   }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .feature-container {
+    flex-direction: row;
+    padding: 100px 0px;
+  }
+
+  .feature {
+    margin: 25px;
+  }
+
+  .feature p {
+    margin: 25px;
+    padding-bottom: 0px;
+  }
+
+  .start-link {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
 
 }
