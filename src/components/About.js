@@ -16,7 +16,7 @@ class About extends React.Component {
 		return (
 			<main role="main" className="about">
 				<section className="about-the-app">
-					<h4 className="about-h4">The App</h4>
+					<h4 className="about-h4">safeR</h4>
 					<p className="about-paragraph">
 						safeR is a community driven and led app created for the purpose of improving community awareness
 						of local incidents and events.
