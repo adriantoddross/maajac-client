@@ -24,7 +24,7 @@ const GoogleMapComponent = props => {
 	}
 	return (
 		<GoogleMapsWrapper
-			googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+			googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP1IczvCJ_KC6X397wVYb1JSgOkR6cvxU&libraries=places"
 			loadingElement={<div style={{ height: `100vh` }} />}
 			containerElement={<div style={{ height: height, width: `100vw` }} />}
 			mapElement={<div style={{ height: height }} />}

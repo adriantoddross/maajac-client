@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Search from './SearchBox';
+// import Search from './SearchBox';
 import Filter from './Filter';
 import { Field, reduxForm } from 'redux-form';
 import { newMarker } from '../actions/markerActions';
@@ -143,10 +143,10 @@ class reportForm extends Component {
               id="tab-2"
               onClick={() => this.flip2()}
             />
-            <label htmlFor="tab-2">Search</label>
+            <label htmlFor="tab-2">Filter</label>
             <div className="tab-content">
               <Filter />
-              <Search />
+              {/* <Search /> */}
             </div>
           </li>
         </ul>
