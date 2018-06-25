@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleMapComponent from './googleMap';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 
 import { getMarkers } from '../actions/markerActions';
 import { setUserLocation } from '../actions/reportActions';
