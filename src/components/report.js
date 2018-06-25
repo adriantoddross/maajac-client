@@ -56,7 +56,8 @@ class reportForm extends Component {
         <ul className="tabs">
           <li>
             <input
-              checked={this.state.check1}
+              defaultChecked
+              // checked={this.state.check1}
               type="radio"
               name="tabs"
               id="tab-1"
