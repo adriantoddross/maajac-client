@@ -32,7 +32,7 @@ MOBILE VIEW
 	background-color: #9e9fa1;
 	margin: 10px auto;
 	padding: 10px;
-	height: 350px;
+	height: auto;
 }
 
 .incident-type,
@@ -65,31 +65,38 @@ MOBILE VIEW
 	font-weight: bold;
 }
 
-.
-
 /* ============================
 MEDIA QUERIES
 ============================*/
 
 /* tablet */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+
+@media only screen and (min-width: 768px)  {
+	.report-card {
+		width: 50%;
+		height: auto;
+	}
 }
 
 /* desktop */
 
-@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 1024px) {
 	.dashboard {
 		display: flex;
 	}
+
 	.user-reports {
 		display: flex;
-		flex-direction: row;
+		flex-flow: row wrap;
 		width: 85%;
 		margin: 0 auto;
 		padding-top: 25px;
 	}
+
 	.report-card {
-		width: 250px;
+		font-size: 125%;
+		height: 325px;
+		width: 300px;
 	}
 }
