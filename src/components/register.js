@@ -1,8 +1,6 @@
 import React from 'react';
 import { Field, reduxForm, focus } from 'redux-form';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
-import { getOS } from '../osFinder';
 import Input from './input';
 import { required, nonEmpty, matches, length, isTrimmed } from '../utils/validators';
 import { register } from '../actions/userActions';

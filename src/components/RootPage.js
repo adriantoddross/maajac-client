@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Dialog from 'material-ui/Dialog';
 import { Link, Redirect } from 'react-router-dom';
-import { getOS } from '../osFinder';
 import LoginForm from '../components/Login';
 import RegistrationForm from '../components/register';
 import { closeDialog } from '../actions/modalActions';
@@ -15,7 +14,6 @@ class RootPage extends Component {
 	}
 
 	render() {
-		const os = getOS();
 		const isMobile = window.innerWidth <= 1023;
 		// console.log('OS: ', os);
 		if (this.props.currentUser) {

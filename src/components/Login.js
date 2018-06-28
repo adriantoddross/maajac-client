@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import Input from './input';
-import { Redirect } from 'react-router-dom';
-import { getOS } from '../osFinder';
-// import { Redirect } from 'react-router-dom';
 import { required, nonEmpty } from '../utils/validators';
 import { login } from '../actions/userActions';
 import { openSignUp, closeDialog } from '../actions/modalActions';
@@ -24,9 +21,6 @@ export class LoginForm extends Component {
 
 	render() {
 		const { handleSubmit, pristine, submitting } = this.props;
-
-		const os = getOS();
-		const isMobile = window.innerWidth <= 1023;
 
 		let errorMessage;
 		if (this.props.error) {
