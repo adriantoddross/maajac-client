@@ -4,6 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { clearAuth } from '../actions/userActions';
 import { clearUserCredentials, clearAuthToken } from '../local-storage';
 import { openSignUp, openLogin, openDialog, closeDialog } from '../actions/modalActions';
+import { login } from '../actions/userActions';
 // import Menu from '../components/dropdownMenu';
 
 // styles
@@ -78,6 +79,9 @@ export class Navbar extends Component {
 		} else {
 			loggedInNavbar = (
 				<div>
+					<button className="signin" onClick={() => this.props.dispatch(login('pizzadev123', 'thinkful2018'))}>
+						Demo
+					</button>
 					<button className="signup" onClick={() => this.signUp()}>
 						Sign Up
 					</button>
