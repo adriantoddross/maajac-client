@@ -73,7 +73,7 @@ export const postProfileToUser = (ppImage) => (dispatch, getState) => {
 			}
 			saveUserCredentials(newUser)
 		})
-		.then(data => console.log(data))
+		// .then(data => console.log(data))
 }
 
 

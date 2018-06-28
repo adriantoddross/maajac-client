@@ -21,7 +21,7 @@ export class Dashboard extends React.Component {
 
 	onClick(e) {
 		e.preventDefault();
-		console.log(e.target.id);
+		// console.log(e.target.id);
 		this.props.dispatch(deleteMarkerDashboard({ markerId: e.target.id }));
 	}
 

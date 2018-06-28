@@ -42,7 +42,7 @@ export class GoogleMapWrapper extends React.PureComponent {
 					});
 				},
 				error => {
-					console.log(error);
+					// console.log(error);
 				}
 			);
 		}
@@ -51,8 +51,8 @@ export class GoogleMapWrapper extends React.PureComponent {
 	handleMapClick(event) {
 		let lat = event.latLng.lat();
 		let lng = event.latLng.lng();
-		console.log('lat:', lat);
-		console.log('lng', lng);
+		// console.log('lat:', lat);
+		// console.log('lng', lng);
 		this.setState({
 			indicatorPin: {
 				lat,

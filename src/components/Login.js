@@ -40,7 +40,7 @@ export class LoginForm extends Component {
 		function viewPort(props) {
 			if (props) {
 				if (os === ('iOS' || 'Android')) {
-					console.log('Mobile in here:', isMobile);
+					// console.log('Mobile in here:', isMobile);
 					if (isMobile) {
 						return <Redirect to="/report" />;
 					} else {

@@ -10,7 +10,7 @@ import MyEditor from './ProfilePictureEditor';
 export class UserProfile extends Component {
 
   ppUploadModal() {
-    console.log('open modal')
+    // console.log('open modal')
     this.props.dispatch(profileOpenDialog());
   }
 

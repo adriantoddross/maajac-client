@@ -19,7 +19,7 @@ class MyEditor extends React.Component {
   }
 
   uploadHandler = () => {
-    console.log(this.state.selectedFile)
+    // console.log(this.state.selectedFile)
     this.props.dispatch(postProfileImage(this.state.selectedFile))
     this.props.dispatch(profileCloseDialog())
   }
