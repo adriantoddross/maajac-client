@@ -17,7 +17,7 @@ class RootPage extends Component {
 	render() {
 		const os = getOS();
 		const isMobile = window.innerWidth <= 1023;
-		console.log('OS: ', os);
+		// console.log('OS: ', os);
 		if (this.props.currentUser) {
 			if (os === ('iOS' || 'Android')) {
 				if (isMobile) {
