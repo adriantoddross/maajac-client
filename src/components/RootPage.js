@@ -19,12 +19,8 @@ class RootPage extends Component {
 		const isMobile = window.innerWidth <= 1023;
 		// console.log('OS: ', os);
 		if (this.props.currentUser) {
-			if (os === ('iOS' || 'Android')) {
-				if (isMobile) {
-					return <Redirect to="/report" />;
-				} else {
-					return <Redirect to="/map" />;
-				}
+			if (isMobile) {
+				return <Redirect to="/report" />;
 			} else {
 				return <Redirect to="/map" />;
 			}

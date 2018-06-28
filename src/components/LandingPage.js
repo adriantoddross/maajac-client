@@ -20,6 +20,7 @@ export class LandingPage extends Component {
 	}
 
 	render() {
+
 		if (!this.props.currentUser && this.props.match.path === '/report') {
 			return <Redirect to="/map" />;
 		}

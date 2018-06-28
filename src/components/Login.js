@@ -37,24 +37,22 @@ export class LoginForm extends Component {
 			);
 		}
 
-		function viewPort(props) {
-			if (props) {
-				if (os === ('iOS' || 'Android')) {
-					// console.log('Mobile in here:', isMobile);
-					if (isMobile) {
-						return <Redirect to="/report" />;
-					} else {
-						return <Redirect to="/map" />;
-					}
-				} else {
-					return <Redirect to="/map" />;
-				}
-			}
-		}
+		// function viewPort(props) {
+		// 	if (props) {
+		// 		if (os === ('iOS' || 'Android')) {
+		// 			// console.log('Mobile in here:', isMobile);
+		// 			if (isMobile) {
+		// 				return <Redirect to="/report" />;
+		// 			}
+		// 		} else {
+		// 			return <Redirect to="/map" />;
+		// 		}
+		// 	}
+		// }
 
 		return (
 			<div className="login">
-				{viewPort(this.props.loggedIn)}
+				{/* // {viewPort(this.props.loggedIn)} */}
 				{/* {this.props.loggedIn && (os === 'Android' || 'iOS') && !isMobile ? <Redirect to="/map" /> : ''}
 				{this.props.loggedIn && (os === 'Windows' || 'Mac OS' || 'Linux') ? <Redirect to="/map" /> : ''} */}
 				<form className="login-form" onSubmit={handleSubmit(values => this.onLogin(values))}>

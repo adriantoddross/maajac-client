@@ -33,19 +33,19 @@ export class RegistrationForm extends React.Component {
 				</div>
 			);
 		}
-		const os = getOS();
-		const isMobile = window.innerWidth <= 1023;
-		if (this.props.loggedIn) {
-			if (os === ('iOS' || 'Android')) {
-				if (isMobile) {
-					return <Redirect to="/report" />;
-				} else {
-					return <Redirect to="/map" />;
-				}
-			} else {
-				return <Redirect to="/map" />;
-			}
-		}
+		// const os = getOS();
+		// const isMobile = window.innerWidth <= 1023;
+		// if (this.props.loggedIn) {
+		// 	if (os === ('iOS' || 'Android')) {
+		// 		if (isMobile) {
+		// 			return <Redirect to="/report" />;
+		// 		} else {
+		// 			return <Redirect to="/map" />;
+		// 		}
+		// 	} else {
+		// 		return <Redirect to="/map" />;
+		// 	}
+		// }
 
 		return (
 			<form className="modal-form" onSubmit={handleSubmit(values => this.onSubmit(values))}>
