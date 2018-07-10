@@ -1,113 +1,129 @@
-* {
-	margin: 0px;
-	padding: 0px;
-}
 
-.navbar {
-	background-color: #2e3434;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 50px;
-	padding-right: 16px;
-	color: white;
-	padding-left: 16px;
-	font-family: 'Work Sans', sans-serif;
-}
 
-.home a {
-	font-size: 16px;
-	font-weight: 500;
-	color: white;
-	text-decoration: none;
-}
-.home .logo {
-	font-size: 30px;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-}
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
 
-.dropdown-menu {
-	position: absolute;
-	top: 2.5rem;
-	right: 21px;
-	display: flex;
-	flex-direction: column;
-	z-index: 2;
-	background-color: #7bc087;
-	width: 170px;
-}
+	.navbar {
+		background-color: #2e3434;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+		padding-right: 16px;
+		color: white;
+		padding-left: 16px;
+		font-family: 'Work Sans', sans-serif;
+	}
 
-.navbar a:first-of-type {
-	padding-top: 15px;
-}
+	.home a {
+		font-size: 16px;
+		font-weight: 500;
+		color: white;
+		text-decoration: none;
+	}
+	.home .logo {
+		font-size: 30px;
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+	}
 
-.navbar a {
-	font-size: 16px;
-	font-weight: 400;
-	color: white;
-	text-decoration: none;
-	padding: .5rem 0 .5rem 0;
-}
+	.dropdown-menu {
+		position: absolute;
+		top: 2.5rem;
+		right: 21px;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		background-color: #7bc087;
+		width: 170px;
+	}
 
-.navbar-link {
-	padding: .5rem 0 .5rem 0;
-	font-size: 16px;
-	font-weight: 400;
-	color: white;
-	text-decoration: none;
-	background-color: #3b4141;
-	border: none;
-}
+	.navbar a:first-of-type {
+		padding-top: 15px;
+	}
 
-.nav-arrow {
-	text-align: right;
-}
+	.navbar a {
+		font-size: 12px;
+		font-weight: 400;
+		color: white;
+		text-decoration: none;
+		padding: .5rem 0 .5rem 0;
+	}
 
-.down {
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-}
+	.navbar-link {
+		padding: .5rem 0 .5rem 0;
+		font-size: 16px;
+		font-weight: 400;
+		color: white;
+		text-decoration: none;
+		background-color: #3b4141;
+		border: none;
+	}
 
-.navbar .report-button-large {
-	background-color: #7bc087;
-	height: 30px;
-	width: 100px;
-	border: none;
-	margin: 5px;
-	color: white;
-}
+	.nav-arrow {
+		text-align: right;
+	}
 
-.small-profile-nav {
-	display: none;
-}
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
 
-.navbar-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-}
-.signin {
-	background-color: #7bc087;
-	height: 30px;
-	width: 80px;
-	border: none;
-	margin: 5px;
-	color: white;
-}
-.signup {
-	background-color: #7bc087;
-	height: 30px;
-	width: 80px;
-	border: none;
-	margin: 5px;
-	color: white;
+	.navbar .report-button-large {
+		background-color: #7bc087;
+		height: 30px;
+		width: 100px;
+		border: none;
+		margin: 5px;
+		color: white;
+	}
+
+	.small-profile-nav {
+		display: none;
+	}
+
+	.navbar-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.signin {
+		background-color: #7bc087;
+		height: 30px;
+		width: 60px;
+		border: none;
+		margin: 5px;
+		color: white;
+	}
+
+	.signup {
+		background-color: #7bc087;
+		height: 30px;
+		width: 60px;
+		border: none;
+		margin: 5px;
+		color: white;
+	}
 }
 /* ============================
 MEDIA QUERIES
 ============================*/
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+	.navbar .mobile-only-navbar {
+		display: none;
+	}
+
+	.navbar a {
+		font-size: 16px;
+	}
+}
 
 /* Desktop */
 
@@ -147,40 +163,4 @@ MEDIA QUERIES
 		color: white;
 	}
 }
-@media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 1) {
-	.signin {
-		background-color: #7bc087;
-		height: 25px;
-		width: 65px;
-		border: none;
-		margin: 5px;
-		color: white;
-	}
-	.signup {
-		background-color: #7bc087;
-		height: 25px;
-		width: 65px;
-		border: none;
-		margin: 5px;
-		color: white;
-	}
-}
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 1) {
-	.signin {
-		background-color: #7bc087;
-		height: 25px;
-		width: 75px;
-		border: none;
-		margin: 5px;
-		color: white;
-	}
-	.signup {
-		background-color: #7bc087;
-		height: 25px;
-		width: 75px;
-		border: none;
-		margin: 5px;
-		color: white;
-	}
-}
