@@ -21,9 +21,9 @@ export class LandingPage extends Component {
 
 	render() {
 
-		if (!this.props.currentUser && this.props.match.path === '/report') {
-			return <Redirect to="/map" />;
-		}
+		// if (!this.props.currentUser && this.props.match.path === '/report') {
+		// 	return <Redirect to="/map" />;
+		// }
 
 		let modalForm;
 		if (this.props.currentTab) {
@@ -34,7 +34,7 @@ export class LandingPage extends Component {
 			}
 		}
 
-		const reportForm = this.props.currentUser ? <ReportForm path={this.props.match.path} /> : '';
+		const reportForm = <ReportForm/>;
 
 		return (
 			<div className="landing-page">

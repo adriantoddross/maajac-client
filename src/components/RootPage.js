@@ -14,14 +14,18 @@ class RootPage extends Component {
 	}
 
 	render() {
-		const isMobile = window.innerWidth <= 1023;
-		// console.log('OS: ', os);
+		// const isMobile = window.innerWidth <= 1023;
+		// // console.log('OS: ', os);
+		// if (this.props.currentUser) {
+		// 	if (isMobile) {
+		// 		return <Redirect to="/report" />;
+		// 	} else {
+		// 		return <Redirect to="/map" />;
+		// 	}
+		// }
+
 		if (this.props.currentUser) {
-			if (isMobile) {
-				return <Redirect to="/report" />;
-			} else {
-				return <Redirect to="/map" />;
-			}
+			return <Redirect to="/map" />;
 		}
 
 		let modalForm;
