@@ -18,10 +18,10 @@ const GoogleMapsWrapper = withScriptjs(
 
 // details of the map
 const GoogleMapComponent = props => {
-	let height = 'calc(100vh - 50px)';
-	if (props.path === '/report') {
-		height = '35vh';
-	}
+	let height = 'calc(100vh - 350px)';
+	// if (props.path === '/report') {
+	// 	height = '35vh';
+	// }
 	return (
 		<GoogleMapsWrapper
 			googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP1IczvCJ_KC6X397wVYb1JSgOkR6cvxU&libraries=places"

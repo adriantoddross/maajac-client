@@ -44,27 +44,13 @@ class reportForm extends Component {
   render() {
     const { handleSubmit, pristine, submitting, reset, dispatch } = this.props;
 
-    let style;
-    if (this.props.path === '/map') {
-      style = 'report';
-    } else if (this.props.path === '/report') {
-      style = 'mobile-only';
-    }
-
     return (
-      <div className={style}>
-        <ul className="tabs">
-          <li>
-            <input
-              defaultChecked
-              // checked={this.state.check1}
-              type="radio"
-              name="tabs"
-              id="tab-1"
-              onClick={() => this.flip1()}
-            />
-            <label htmlFor="tab-1">Report</label>
-            <div className="tab-content">
+      <div className='report'>
+      <div className='filter-container'>
+        <label className="reg-label">Filter By Incident</label>
+        <Filter />
+        <hr/>
+      </div>
               <form
                 name={'report'}
                 id="incident-report"
@@ -133,24 +119,7 @@ class reportForm extends Component {
                   Submit
                 </button>
               </form>
-            </div>
-          </li>
-          <li>
-            <input
-              checked={this.state.check2}
-              type="radio"
-              name="tabs"
-              id="tab-2"
-              onClick={() => this.flip2()}
-            />
-            <label htmlFor="tab-2">Filter</label>
-            <div className="tab-content">
-              <Filter />
-              {/* <Search /> */}
-            </div>
-          </li>
-        </ul>
-      </div>
+    </div>
     );
   }
 }

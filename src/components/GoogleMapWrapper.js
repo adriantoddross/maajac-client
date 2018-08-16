@@ -71,6 +71,7 @@ export class GoogleMapWrapper extends React.PureComponent {
 
 	render() {
 		return (
+			<div className='map'>
 			<GoogleMapComponent
 				path={this.props.path}
 				isMarkerShown={this.state.isMarkerShown}
@@ -82,6 +83,7 @@ export class GoogleMapWrapper extends React.PureComponent {
 				isOpen={this.state.popupIsOpen}
 				onToggleOpen={() => this.onToggleOpen()}
 			/>
+			</div>
 		);
 	}
 }

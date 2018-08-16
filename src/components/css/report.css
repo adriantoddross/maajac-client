@@ -1,60 +1,20 @@
-body .mobile-only {
-	background-color: #3b4141;
+
+.report {
+	flex: 1;
+	margin: 0 auto;
+	width: 80%;
+	padding: 35px 0px;
 }
-input,
-select {
-	-webkit-appearance: none;
+
+.filter-container {
+	padding-bottom: 15px;
 }
-.report,
-.mobile-only {
-	width: 300px;
-	display: block;
-}
-.tabs {
-	padding: 0px;
-	margin: 0px;
-}
-.tabs li {
-	float: left;
-}
-.tabs li > input {
-	display: none;
-}
-.tabs li > label {
-	display: inline-block;
-	width: 100%;
-	left: 15%;
-	margin: 13px;
-	border: 1px solid #3b4141;
-	height: 30px;
-	background: #7bc087;
-	padding: 5px 20px;
-	text-align: center;
-}
-.tabs .tab-content {
-	display: none;
-	position: absolute;
-	left: 0;
-}
-.tabs li > input:checked + label {
-	background: #7bc087a8;
-}
-.tabs li > input:checked ~ .tab-content {
-	display: block;
-}
+
 .filter {
 	background: #2e3434;
 	height: 30px;
-	width: 200px;
-	margin: 15px;
-	border: none;
-	color: white;
-}
-.location-search-input {
-	background: #2e3434;
-	height: 30px;
-	width: 200px;
-	margin: 15px;
+	width: 80%;
+	padding: 25px;
 	border: none;
 	color: white;
 }
@@ -63,43 +23,27 @@ select {
 	background: #2e3434;
 }
 
-.reg-label {
-	position: relative;
-	top: 10px;
-}
+
 .report {
 	background-color: #3b4141;
-	min-width: 240px;
-	max-width: 240px;
-	display: none;
-}
-
-.mobile-only {
-	background-color: #3b4141;
-	width: 100vw;
-	display: inherit;
 }
 
 #type {
-	-webkit-appearance: none;
 	margin: 20px;
 	width: 80%;
 	background-color: #2e3434;
 	height: 40px;
 	color: #ffffff;
 	border: none;
+	text-align: center;
 }
 
-.report,
-.mobile-only label {
-	position: relative;
+.report label {
 	color: #ffffff;
 }
 
 #date {
-	-webkit-appearance: none;
 	padding: 20px;
-	margin: 20px;
 	width: 80%;
 	background-color: #2e3434;
 	height: 30px;
@@ -108,9 +52,7 @@ select {
 }
 
 #time {
-	-webkit-appearance: none;
 	padding: 20px;
-	margin: 20px;
 	width: 80%;
 	background-color: #2e3434;
 	height: 30px;
@@ -120,241 +62,27 @@ select {
 
 #description {
 	padding: 20px;
-	margin: 20px;
 	width: 80%;
 	background-color: #2e3434;
 	height: 30px;
 	color: #ffffff;
 	border: none;
 }
+
 .report-button {
 	background-color: #7bc087;
 	height: 30px;
 	width: 80px;
 	border: none;
-	margin: 5px;
 	color: white;
 }
+
 .filter {
 	background: #2e3434;
-	height: 30px;
-	width: 270px;
-	margin: 15px;
-	border: none;
-	color: white;
-}
-.location-search-input {
-	background: #2e3434;
-	height: 30px;
-	width: 270px;
-	margin: 15px;
+	height: 40px;
+	width: 80%;
 	border: none;
 	color: white;
 }
 
-/* ============================
-MEDIA QUERIES
-============================*/
 
-/* tablet */
-@media only screen and (min-device-width: 300px) and (max-device-width: 359px) and (-webkit-min-device-pixel-ratio: 1) {
-	#type,
-	#date,
-	#time,
-	#description {
-		position: relative;
-		left: 10%;
-	}
-	.tabs li > label {
-		left: 25%;
-	}
-	.reg-label {
-		position: relative;
-		left: 10%;
-	}
-	.report-button {
-		position: relative;
-		left: 10%;
-	}
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
-	#type {
-		height: 40px;
-	}
-
-	#type,
-	#date,
-	#time,
-	#description {
-		position: relative;
-		left: 85%;
-		width: 100%;
-	}
-	.reg-label {
-		position: relative;
-		left: 90%;
-	}
-
-	.tabs li > label {
-		left: 215%;
-	}
-	.report-button {
-		position: relative;
-		width: 45%;
-		left: 110%;
-	}
-	.filter {
-		position: relative;
-		width: 500px;
-		left: 20%;
-	}
-	.location-search-input {
-		position: relative;
-		width: 500px;
-		left: 20%;
-	}
-	.report-button {
-		position: relative;
-		left: 92%;
-	}
-}
-
-/* desktop */
-
-@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-	#type {
-		height: 40px;
-	}
-
-	.report,
-	.mobile-only {
-		width: 300px;
-		display: block;
-	}
-	.tabs {
-		padding: 0px;
-		margin: 0px;
-	}
-	.tabs li {
-		float: left;
-	}
-	.tabs li > input {
-		display: none;
-	}
-	.tabs li > label {
-		position: relative;
-		left: -9%;
-		display: inline-block;
-		width: 100%;
-		margin: 13px;
-		border: 1px solid #3b4141;
-		height: 30px;
-		background: #7bc087;
-		padding: 5px 20px;
-		text-align: center;
-	}
-	.tabs .tab-content {
-		display: none;
-		position: absolute;
-		left: 0;
-	}
-	.tabs li > input:checked + label {
-		background: #7bc087a8;
-	}
-	.tabs li > input:checked ~ .tab-content {
-		display: block;
-	}
-	.filter {
-		background: #2e3434;
-		height: 30px;
-		width: 200px;
-		margin: 15px;
-		border: none;
-		color: white;
-	}
-	.location-search-input {
-		background: #2e3434;
-		height: 30px;
-		width: 200px;
-		margin: 15px;
-		border: none;
-		color: white;
-	}
-}
-
-.report-button-large {
-	background-color: #7bc087;
-	height: 30px;
-	width: 150px;
-	border: none;
-	margin: 5px;
-	color: white;
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 1) {
-	#type {
-		height: 40px;
-	}
-
-	#type,
-	#date,
-	#time,
-	#description {
-		position: relative;
-		left: 13%;
-		width: 100%;
-	}
-	.reg-label {
-		position: relative;
-		left: 20%;
-	}
-
-	.tabs li > label {
-		left: 50%;
-	}
-	.report-button {
-		position: relative;
-		width: 45%;
-		left: 20%;
-	}
-	.filter {
-		position: relative;
-		left: 13%;
-	}
-	.location-search-input {
-		position: relative;
-		left: 13%;
-	}
-}
-@media only screen and (min-device-width: 400px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 1) {
-	#type,
-	#date,
-	#time,
-	#description {
-		height: 40px;
-		width: 100%;
-		position: relative;
-		left: 20%;
-	}
-	.reg-label {
-		position: relative;
-		left: 25%;
-	}
-
-	.tabs li > label {
-		left: 65%;
-	}
-	.report-button {
-		position: relative;
-		width: 45%;
-		left: 25%;
-	}
-	.filter {
-		position: relative;
-		left: 20%;
-	}
-	.location-search-input {
-		position: relative;
-		left: 20%;
-	}
-}
